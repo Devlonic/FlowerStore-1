@@ -1,0 +1,8 @@
+<div
+  class="flex-wrapper centred-flex flower flex-column"
+  (click)="onClick()"
+  [ngStyle]="{ 'background-color': data?.backgroundColor }"
+>
+  <img class="mainImg" [src]="data?.image" alt="" />
+  <h3>{{ data?.name }}</h3>
+</div>

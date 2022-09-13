@@ -1,0 +1,6 @@
+<div class="flex-wrapper flex-column centred-flex section">
+    <h1>{{data?.name}}</h1>
+    <div class="flex-wrapper flex-wrap scroll-section bundle" >
+        <app-flower *ngFor="let f of data?.bundle" [data]="f"></app-flower>
+    </div>
+</div>

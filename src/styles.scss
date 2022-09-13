@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: sans-serif;
+    color: white;
+    outline: none;
+    font-weight: normal;
+}
+body {
+    background-color: gray;
+}
+.wrapper {
+    display: block;
+}
+
+.flex-wrapper {
+    display: flex;
+}
+
+.centred-flex {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.section {
+    background-color: royalblue;
+    margin: 1em;
+    padding: 1em;
+
+}
+
+.scroll-section {
+    overflow: auto;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: 3em;
+}

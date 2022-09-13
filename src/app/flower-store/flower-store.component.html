@@ -1,0 +1,85 @@
+<div class="wrapper store">
+  <div class="wrapper">
+    <table>
+      <thead>
+        <th>Roses</th>
+        <th>Daisys</th>
+        <th>Tulips</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Store cash: {{ this.data.wallet }}</td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              placeholder="Roses count"
+              value="2"
+              type="number"
+              #countRosesInput
+            />
+          </td>
+          <td>
+            <input
+              placeholder="Daisys count"
+              value="6"
+              type="number"
+              #countDaisysInput
+            />
+          </td>
+          <td>
+            <input
+              placeholder="Tulips count"
+              value="4"
+              type="number"
+              #countTulipsInput
+            />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <input
+              #bundleNameInput
+              value="Unnamed bundle"
+              placeholder="Bundle name"
+              style="width: 100%"
+              type="text"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button
+              (click)="
+                onSellButtonClick(
+                  parseNumber(countRosesInput.value),
+                  parseNumber(countDaisysInput.value),
+                  parseNumber(countTulipsInput.value),
+                  bundleNameInput.value
+                )
+              "
+              style="width: 100%"
+            >
+              Sell
+            </button>
+          </td>
+          <td>
+            <button
+              (click)="
+                onSellSequenceButtonClick(
+                  parseNumber(countRosesInput.value),
+                  parseNumber(countDaisysInput.value),
+                  parseNumber(countTulipsInput.value),
+                  bundleNameInput.value
+                )
+              "
+              style="width: 100%"
+            >
+              Sell
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
